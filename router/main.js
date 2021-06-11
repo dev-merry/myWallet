@@ -11,8 +11,10 @@ module.exports = function(app) {
      });
      app.get('/about',function(req,res){
         res.render('about.html');
-    });
-     
+     });
+     app.get('/aboutme',function(req,res){
+        res.render('aboutme.html');
+     });
     app.get('/listall', function (req, res) {
       //res.render('about.html');
       console.log('listall...');
